@@ -16,6 +16,16 @@ terraform {
   }
 }
 
+variable "globalaccount" {
+  type        = string
+  description = "The subdomain of the SAP BTP global account."
+}
+
+# Configure the BTP Provider
+provider "btp" {
+  globalaccount = var.globalaccount
+}
+
 output "hello" {
   value = "Hello from main.tf! (with Mario)"
 }
