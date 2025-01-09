@@ -10,5 +10,5 @@ terraform {
 }
 
 output "hello" {
-  value = "Hello from main.tf"
+  value = "Hello from main.tf! (with Mario)"
 }
