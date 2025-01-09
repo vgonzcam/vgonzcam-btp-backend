@@ -86,8 +86,6 @@ jobs:
       # Generates an execution plan for Terraform
       - name: Terraform Plan
         run: |
-          export BTP_USERNAME=${{ secrets.BTP_USERNAME }}
-          export BTP_PASSWORD=${{ secrets.BTP_PASSWORD }} 
           terraform plan -var globalaccount=${{ secrets.GLOBALACCOUNT }} -var username=${{ secrets.BTP_USERNAME }} -var password=${{ secrets.BTP_PASSWORD }}
 
         # On push to "main", build or change infrastructure according to Terraform configuration files
