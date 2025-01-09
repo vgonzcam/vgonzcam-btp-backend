@@ -20,3 +20,8 @@ output "hello" {
   value = "Hello from main.tf! (with Mario)"
 }
 
+data "btp_directories" "all"{}
+output "btp_directories-all" {
+  value = data.btp_directories.all
+}
+
