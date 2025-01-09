@@ -1,10 +1,10 @@
-terraform { 
-  cloud { 
-    
-    organization = "vgonzcam_btp_backend" 
+terraform {
+  cloud {
 
-    workspaces { 
-      name = "vgonzcam-btp-backend" 
-    } 
-  } 
+    organization = "vgonzcam_btp_backend"
+
+    workspaces {
+      name = "vgonzcam-btp-backend"
+    }
+  }
 }
