@@ -90,6 +90,7 @@ jobs:
       - name: Terraform Plan
         run: |
           export BTP_USERNAME=${{ secrets.BTP_USERNAME }}
+          echo $BTP_USERNAME
           export BTP_PASSWORD=${{ secrets.BTP_PASSWORD }}
           terraform plan -var globalaccount=${{ secrets.GLOBALACCOUNT }}
 
