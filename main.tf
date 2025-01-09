@@ -35,8 +35,6 @@ variable "password" {
 # Configure the BTP Provider
 provider "btp" {
   globalaccount = var.globalaccount
-  username      = var.username
-  password      = var.password
 }
 
 output "hello" {
