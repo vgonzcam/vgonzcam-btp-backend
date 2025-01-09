@@ -46,8 +46,13 @@ name: "Terraform"
 
 on:
   push:
+    inputs:
+      GLOBAL_ACCOUNT:
+        description: "(String) The subdomain of the global account in which you want to manage resources. To be found in the cockpit, in the global account view."
+        required: true
+        default: "c2d80553trial-ga"
     branches: ["main"]
-  pull_request:
+    pull_request:
 
 permissions:
   contents: read
@@ -56,7 +61,7 @@ jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
-    environment: production
+    environment: dev
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
