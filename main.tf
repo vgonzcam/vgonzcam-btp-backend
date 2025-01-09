@@ -8,3 +8,7 @@ terraform {
     }
   }
 }
+
+output "hello" {
+     value = "Hello from main.tf"
+}
