@@ -43,10 +43,6 @@ output "hello" {
   value = "Hello from main.tf! (with Mario)"
 }
 
-resource "btp_directory" "parent" {
-  name        = "my-parent-directory"
-  description = "This is a parent directory."
-}
 
 data "btp_directories" "all" {}
 output "btp_directories-all" {
