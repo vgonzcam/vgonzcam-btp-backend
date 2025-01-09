@@ -21,15 +21,15 @@ variable "globalaccount" {
   description = "The subdomain of the SAP BTP global account."
 }
 
-variable "username" {
-  type        = string
-  description = "The subdomain of the SAP BTP global account."
-}
+# variable "username" {
+#   type        = string
+#   description = "The subdomain of the SAP BTP global account."
+# }
 
-variable "password" {
-  type        = string
-  description = "The subdomain of the SAP BTP global account."
-}
+# variable "password" {
+#   type        = string
+#   description = "The subdomain of the SAP BTP global account."
+# }
 
 
 # Configure the BTP Provider
