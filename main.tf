@@ -40,9 +40,9 @@ provider "btp" {
 }
 
 
-# module "web_app" {
-#   source = "./modules/web_tier/"
-# }
+module "web_app" {
+  source = "./modules/web_tier/"
+}
 
 
 output "hello" {
