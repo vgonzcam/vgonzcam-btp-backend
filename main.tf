@@ -40,7 +40,7 @@ provider "btp" {
 }
 
 
-module "web_app" {
+module "example" {
   source = "./modules/example/"
 }
 
@@ -60,6 +60,6 @@ output "btp_directories-all" {
 }
 
 output "module-module" {
-  value = module.module
+  value = module.example.module
 }
 
