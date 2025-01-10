@@ -59,4 +59,7 @@ output "btp_directories-all" {
   value = data.btp_directories.all
 }
 
+output "module-module" {
+  value = module.module
+}
 
